@@ -1,6 +1,6 @@
 Package.describe({
     name: 'xerdi:caching',
-    version: '0.0.1',
+    version: '0.0.2',
     summary: 'Universal service worker for caching resources in a Meteor project',
     git: 'https://github.com/Xerdi/meteor-caching.git',
     documentation: 'README.md'
