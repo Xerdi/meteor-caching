@@ -17,8 +17,8 @@ export class CacheServicePrototype {
 
     stop() {
         if (this.registration) {
-            this.registration.unregister().catch(() => {
-                log.error('Failed to stop caching service worker');
+            this.registration.unregister().catch((err) => {
+                log.error('Failed to stop caching service worker', err);
             });
         }
     }
@@ -29,8 +29,8 @@ export class CacheServicePrototype {
         this.status = 'started';
     }
 
-    onRegisterFail() {
-        log.error('caching service unsupported');
+    onRegisterFail(err) {
+        log.error('caching service unsupported', err);
         this.status = 'unsupported';
     }
 }
