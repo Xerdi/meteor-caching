@@ -3,7 +3,7 @@ import {Meteor} from "meteor/meteor";
 import {log} from 'meteor/xerdi:logging';
 
 export class CacheServicePrototype {
-    url = '/packages/xerdi_service-worker/service-worker.js';
+    url = '/packages/xerdi_caching/service-worker.js';
     status = 'uninitialized';
     registration : ServiceWorkerRegistration = null;
 
